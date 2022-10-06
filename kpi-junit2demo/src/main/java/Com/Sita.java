@@ -1,67 +1,68 @@
 package Com;
 
-public class Ram extends Employee{
+public class Sita extends Employee implements Runnable {
 
 	@Override
 	public void show() {
 		// TODO Auto-generated method stub
-		System.out.println("employee details");
+		
 	}
 
 	@Override
 	String empname(String name) {
 		// TODO Auto-generated method stub
-		System.out.println("Ram");
-		return null;
+		return name;
 	}
 
 	@Override
 	int empid(int a) {
 		// TODO Auto-generated method stub
-		System.out.println("12");
 		return 0;
 	}
 
 	@Override
 	int empage(int a) {
 		// TODO Auto-generated method stub
-		System.out.println("24");
 		return 0;
 	}
 
 	@Override
 	String empcolor(String color) {
 		// TODO Auto-generated method stub
-		System.out.println("White");
-		return null;
+		return color;
 	}
 
 	@Override
 	String empdob(String dob) {
 		// TODO Auto-generated method stub
-		System.out.println("24/09/2000");
-		return null;
+		return dob;
 	}
 
 	@Override
 	int empsalary(int salary) {
 		// TODO Auto-generated method stub
-		System.out.println("20000");
 		return 0;
 	}
 
 	@Override
 	String emprole(String role) {
 		// TODO Auto-generated method stub
-		System.out.println("Cashier");
-		return null;
+		return role;
 	}
 
 	@Override
 	String empcar(String car) {
 		// TODO Auto-generated method stub
-		System.out.println("Baleno");
-		return null;
+		return car;
 	}
 
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println("Thread t9 is running ");
+	}
+	public static void main(String[] args) {
+		Thread t9 = new Thread("employee salary");
+		t9.start();
+}
 }

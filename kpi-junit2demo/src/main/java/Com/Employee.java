@@ -9,5 +9,6 @@ public abstract class Employee implements Employee1 {
 	abstract int empsalary(int salary);
 	abstract String emprole(String role);
 	abstract String empcar(String car);
+	
 
 }
